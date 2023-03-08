@@ -1,0 +1,12 @@
+/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/bin/Release/net6.0/Domain.deps.json
+/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/bin/Release/net6.0/Domain.dll
+/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/bin/Release/net6.0/Domain.pdb
+/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/obj/Release/net6.0/Domain.csproj.AssemblyReference.cache
+/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/obj/Release/net6.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/obj/Release/net6.0/Domain.AssemblyInfoInputs.cache
+/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/obj/Release/net6.0/Domain.AssemblyInfo.cs
+/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/obj/Release/net6.0/Domain.csproj.CoreCompileInputs.cache
+/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/obj/Release/net6.0/Domain.dll
+/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/obj/Release/net6.0/refint/Domain.dll
+/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/obj/Release/net6.0/Domain.pdb
+/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/obj/Release/net6.0/ref/Domain.dll

@@ -1,0 +1,126 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/cem.subasi/Projects/CleanArchitecture/src/Application/Application.csproj": {}
+  },
+  "projects": {
+    "/Users/cem.subasi/Projects/CleanArchitecture/src/Application/Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cem.subasi/Projects/CleanArchitecture/src/Application/Application.csproj",
+        "projectName": "Application",
+        "projectPath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Application/Application.csproj",
+        "packagesPath": "/Users/cem.subasi/.nuget/packages/",
+        "outputPath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cem.subasi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/Domain.csproj": {
+                "projectPath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.1, )"
+            },
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/Domain.csproj",
+        "packagesPath": "/Users/cem.subasi/.nuget/packages/",
+        "outputPath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cem.subasi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
