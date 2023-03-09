@@ -7,7 +7,7 @@ dotnet build
 ## Run Command
 
 ```sh
-dotnet run --project src/Presentation --environment Development -- "server=localhost;database=words-clean-arch;user=root;password=parola"
+dotnet run --project src/Presentation --environment Development
 
 ```
 
