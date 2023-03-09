@@ -123,10 +123,10 @@
 /Users/cem.subasi/Projects/CleanArchitecture/src/Tests/Architecture/obj/Debug/net6.0/ref/Architecture.dll
 /Users/cem.subasi/Projects/CleanArchitecture/src/Tests/Architecture/bin/Debug/net6.0/FluentValidation.dll
 /Users/cem.subasi/Projects/Words-NET/src/Tests/Architecture/bin/Debug/net6.0/CoverletSourceRootsMapping
+/Users/cem.subasi/Projects/Words-NET/src/Tests/Architecture/bin/Debug/net6.0/Microsoft.TestPlatform.PlatformAbstractions.dll
 /Users/cem.subasi/Projects/Words-NET/src/Tests/Architecture/bin/Debug/net6.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
 /Users/cem.subasi/Projects/Words-NET/src/Tests/Architecture/bin/Debug/net6.0/xunit.runner.reporters.netcoreapp10.dll
 /Users/cem.subasi/Projects/Words-NET/src/Tests/Architecture/bin/Debug/net6.0/xunit.runner.utility.netcoreapp10.dll
-/Users/cem.subasi/Projects/Words-NET/src/Tests/Architecture/bin/Debug/net6.0/Microsoft.TestPlatform.PlatformAbstractions.dll
 /Users/cem.subasi/Projects/Words-NET/src/Tests/Architecture/bin/Debug/net6.0/Architecture.deps.json
 /Users/cem.subasi/Projects/Words-NET/src/Tests/Architecture/bin/Debug/net6.0/Architecture.runtimeconfig.json
 /Users/cem.subasi/Projects/Words-NET/src/Tests/Architecture/bin/Debug/net6.0/Architecture.dll
