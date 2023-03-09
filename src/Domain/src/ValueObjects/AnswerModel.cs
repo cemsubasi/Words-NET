@@ -1,5 +1,5 @@
 namespace Words.Domain.ValueObjects;
 
 public class AnswerModel {
-  public string Value { get; set; }
+  public string Value { get; set; } = default!;
 }

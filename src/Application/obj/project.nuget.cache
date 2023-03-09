@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vOeHGDPqwuz66aVr69F6PcJq3XsR2bqDXNgP3Ci8NSxlpieWBVlu2CosXeIaqP/8Y2kB9iTlG6fGBU2bOzl76w==",
+  "dgSpecHash": "nupxtk504iHxVILns6Fb+RKoK6Z6WosE0lIGhR9IBYAxv4Fbmxf9aROX1LnlEgy3rosoQla6Hc8kFPXnxYuFsw==",
   "success": true,
-  "projectFilePath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Application/Application.csproj",
+  "projectFilePath": "/Users/cem.subasi/Projects/Words-NET/src/Application/Application.csproj",
   "expectedPackageFiles": [
     "/Users/cem.subasi/.nuget/packages/fluentvalidation/11.5.1/fluentvalidation.11.5.1.nupkg.sha512",
     "/Users/cem.subasi/.nuget/packages/mapster/7.3.0/mapster.7.3.0.nupkg.sha512",

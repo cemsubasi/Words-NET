@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jHEkJQBTOS5kZUYlKHwxApYRVUYWDC8IDCW22Vo4yMLpvfgX+AL8sQJbTWb8XfMsFmBTJc+6ZQPomRHjCpq10Q==",
+  "dgSpecHash": "NW9kk4X6oZOEUoqqfboFRZjuEv3c6wYMq3QFLsp4EH8olYv8E27yHD7SP6smXpAwYHixVmp0qyO3F2N9yVQa0w==",
   "success": true,
-  "projectFilePath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Persistence/Persistence.csproj",
+  "projectFilePath": "/Users/cem.subasi/Projects/Words-NET/src/Persistence/Persistence.csproj",
   "expectedPackageFiles": [
     "/Users/cem.subasi/.nuget/packages/fluentvalidation/11.5.1/fluentvalidation.11.5.1.nupkg.sha512",
     "/Users/cem.subasi/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",

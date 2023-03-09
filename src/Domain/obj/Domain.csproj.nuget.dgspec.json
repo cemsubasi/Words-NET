@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/Domain.csproj": {}
+    "/Users/cem.subasi/Projects/Words-NET/src/Domain/Domain.csproj": {}
   },
   "projects": {
-    "/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/Domain.csproj": {
+    "/Users/cem.subasi/Projects/Words-NET/src/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/Domain.csproj",
+        "projectUniqueName": "/Users/cem.subasi/Projects/Words-NET/src/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/Domain.csproj",
+        "projectPath": "/Users/cem.subasi/Projects/Words-NET/src/Domain/Domain.csproj",
         "packagesPath": "/Users/cem.subasi/.nuget/packages/",
-        "outputPath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/obj/",
+        "outputPath": "/Users/cem.subasi/Projects/Words-NET/src/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/cem.subasi/.nuget/NuGet/NuGet.Config"

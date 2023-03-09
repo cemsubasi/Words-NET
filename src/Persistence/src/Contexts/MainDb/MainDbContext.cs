@@ -1,14 +1,14 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 
 using Words.Domain.Entities;
+using Words.Infastructure.Authentication;
 
 namespace Words.Persistence.Contexts;
 
 public class MainDbContext : DbContext {
-  private const string ConnectionString = "server=localhost;database=words-clean-arch;user=root;password=parola";
-
-  protected override void OnConfiguring(DbContextOptionsBuilder options) {
-    _ = options.UseMySql(ConnectionString, new MySqlServerVersion(new Version(8, 0, 28)));
+  public MainDbContext(DbContextOptions<MainDbContext> options) : base(options) {
   }
 
   public DbSet<User> Users { get; set; }

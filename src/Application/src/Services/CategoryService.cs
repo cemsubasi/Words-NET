@@ -40,8 +40,8 @@ public class CategoryService {
     return result;
   }
 
-  public async Task<ICollection<CategoryResponseModel>> GetAllAsync() {
-    var result = await this.categoryRepository.GetAllAsync();
+  public async Task<ICollection<CategoryResponseModel>> GetAllAsync(CancellationToken cancellationToken) {
+    var result = await this.categoryRepository.GetAllAsync(cancellationToken);
     var model = result.Adapt<List<CategoryResponseModel>>();
     return model;
   }
@@ -55,7 +55,7 @@ public class CategoryService {
   }
 
   public async Task<bool> RemoveCategory(Guid id, CancellationToken cancellationToken) {
-    var category = await this.categoryRepository.GetById(id);
+    var category = await this.categoryRepository.GetById(id, cancellationToken);
     if (category is not null) {
       this.categoryRepository.Remove(category);
     }

@@ -1,3 +1,5 @@
+using System.Text.Json;
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -31,11 +33,15 @@ public class AuthController : ControllerBase {
     if (result is null) {
       var traceId = Guid.NewGuid();
       logger.LogError($"Unauthorized user credentials. TraceId: {traceId}");
-      return this.UnprocessableEntity(new {TraceId = traceId});
+      logger.LogError($"TraceId: {traceId}. RequestBody: {JsonSerializer.Serialize(model)}");
+
+      HttpContext.Response.Headers.Authorization = string.Empty;
+      return this.Unauthorized(new { Message = $"Unauthorized user credentials. TraceId: {traceId}" });
     }
 
     var token = jwtProvider.Generate(result);
-    HttpContext.Response.Headers.Authorization = "Bearer "  + token;
+    HttpContext.Response.Headers.Authorization = "Bearer " + token;
+
     var words = await this.wordService.GetWordsByCategory(result.Id, cancellationToken);
 
     return this.Ok(words);

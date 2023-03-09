@@ -23,14 +23,20 @@ public class SessionMiddleware : IMiddleware {
 
   public async Task InvokeAsync(HttpContext context, RequestDelegate next) {
     logger.LogInformation(context.GetEndpoint()?.ToString());
+
     var claim = context.User.Claims.Where(x => x.Type == "id").FirstOrDefault();
-      logger.LogCritical((claim is null).ToString());
     if (claim is not null) {
       var id = Guid.Parse(claim.Value);
-      logger.LogCritical(claim.Value);
+      logger.LogDebug("Claim is {0}", claim.Value);
       var user = await this.dbContext.Users.SingleOrDefaultAsync(x => x.Id == id);
       if (user is not null) {
+        logger.LogDebug("User found and its name is {0}", user.Username);
         sessionService.User = user;
+      }
+      else {
+        logger.LogDebug("User not found.");
+        context.Response.StatusCode = 403;
+        await next(context);
       }
     }
 

@@ -3,15 +3,40 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="src/Presentation/src/Program.cs">
     <Files>
-      <File FileName="src/Presentation/src/Program.cs" Line="1" Column="1" />
+      <File FileName="src/Presentation/src/Program.cs" Line="27" Column="22" />
+      <File FileName="src/Presentation/appsettings.json" Line="1" Column="1" />
+      <File FileName="src/Presentation/src/Options/JwtBearerOptionSetup.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CleanArchitecture" expanded="True">
             <Node name="src" expanded="True">
-              <Node name="Presentation" expanded="True">
+              <Node name="Application" expanded="True">
+                <Node name="src" expanded="True" />
+              </Node>
+              <Node name="Domain" expanded="True" />
+              <Node name="Infastructure" expanded="True">
+                <Node name="Dependencies" expanded="True">
+                  <Node name="PackageDependencies" expanded="True" />
+                  <Node name="ProjectDependencies" expanded="True" />
+                </Node>
                 <Node name="src" expanded="True">
+                  <Node name="Authentication" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Persistence" expanded="True">
+                <Node name="Dependencies" expanded="True">
+                  <Node name="PackageDependencies" expanded="True" />
+                </Node>
+                <Node name="src" expanded="True">
+                  <Node name="Extensions" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Presentation" expanded="True">
+                <Node name="Dependencies" expanded="True" />
+                <Node name="src" expanded="True">
+                  <Node name="Controllers" expanded="True" />
                   <Node name="Program.cs" selected="True" />
                 </Node>
               </Node>
@@ -28,5 +53,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.src.Presentation PreferredExecutionTarget="/Applications/Firefox.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
 </Properties>

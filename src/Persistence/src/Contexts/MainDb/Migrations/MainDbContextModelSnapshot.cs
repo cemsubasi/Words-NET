@@ -36,7 +36,7 @@ namespace Persistence.src.Contexts.MainDb.Migrations
 
                     b.HasIndex("WordId");
 
-                    b.ToTable("Answers");
+                    b.ToTable("Answers", (string)null);
                 });
 
             modelBuilder.Entity("Words.Domain.Entities.Category", b =>
@@ -56,7 +56,7 @@ namespace Persistence.src.Contexts.MainDb.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("Words.Domain.Entities.User", b =>
@@ -73,13 +73,17 @@ namespace Persistence.src.Contexts.MainDb.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<string>("PasswordSalt")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Username")
                         .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("Words.Domain.Entities.Word", b =>
@@ -99,7 +103,7 @@ namespace Persistence.src.Contexts.MainDb.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Words");
+                    b.ToTable("Words", (string)null);
                 });
 
             modelBuilder.Entity("Words.Domain.Entities.Answer", b =>

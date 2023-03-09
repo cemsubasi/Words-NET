@@ -28,8 +28,8 @@ public class UserController : ControllerBase {
   }
 
   [HttpGet]
-  public async Task<IActionResult> GetUsers() {
-    var result = await this.userService.GetAll();
+  public async Task<IActionResult> GetUsers(CancellationToken cancellationToken) {
+    var result = await this.userService.GetAll(cancellationToken);
     return this.Ok(result);
   }
 }

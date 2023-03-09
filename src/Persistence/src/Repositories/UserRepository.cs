@@ -17,11 +17,11 @@ public class UserRepository : Repository<User>, IUserRepository {
     return await this.mainDbContext.Users.Include(x => x.Categories).SingleOrDefaultAsync(x => x.Id == id);
   }
 
-  public async Task<User?> VerifyUser(SigninModel model, CancellationToken cancellationToken) {
-    Console.WriteLine(model.Username, model.Password);
+  /* public async Task<User?> VerifyUser(SigninModel model, CancellationToken cancellationToken) { */
+  /*   Console.WriteLine(model.Username, model.Password); */
 
-    return await this.mainDbContext.Users.SingleOrDefaultAsync(x => x.Username == model.Username && x.Password == model.Password, cancellationToken);
-  }
+  /*   return await this.mainDbContext.Users.SingleOrDefaultAsync(x => x.Username == model.Username && x.Password == model.Password, cancellationToken); */
+  /* } */
 
   public async Task<User?> GetUserWithRelations(Guid id, CancellationToken cancellationToken) {
     return await this.mainDbContext.Users

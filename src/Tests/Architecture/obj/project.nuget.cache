@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zezs9xA54yN0V5ZpixTd7NPE4X8uPnCZKbVuhKq12MqNlOeNHFyTxhVkvebjCS154F2DscHhN1tvo/w8SW1Tww==",
+  "dgSpecHash": "VZJMQ6BEETmuP0Hg3+ednt6/mkj5g26M+tqWsqPqiaCexd+GvWoghB1bvHbZkVq5252WmruYv27KC2Fw4XIMbw==",
   "success": true,
-  "projectFilePath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Tests/Architecture/Architecture.csproj",
+  "projectFilePath": "/Users/cem.subasi/Projects/Words-NET/src/Tests/Architecture/Architecture.csproj",
   "expectedPackageFiles": [
     "/Users/cem.subasi/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
     "/Users/cem.subasi/.nuget/packages/fluentassertions/6.9.0/fluentassertions.6.9.0.nupkg.sha512",

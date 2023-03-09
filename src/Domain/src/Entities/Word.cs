@@ -3,6 +3,9 @@ using Words.Domain.Primitives;
 namespace Words.Domain.Entities;
 
 public class Word : Entity {
+  /// <summary>
+  /// For DbContext
+  /// </summary>
   private Word(Guid id, string question) : base(id) {
     this.Question = question;
   }
@@ -33,8 +36,4 @@ public class Word : Entity {
   public static Word Create(string question, Category category, List<Answer> answers) {
     return new Word(id: Guid.NewGuid(), question: question, category: category, answers: answers);
   }
-
-  /* public void AddAnswers(List<Answer> answers) { */
-  /*   this.Answers = answers; */
-  /* } */
 }

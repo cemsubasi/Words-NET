@@ -12,13 +12,12 @@ using Words.Domain.Repositories;
 using Words.Domain.ValueObjects;
 using Words.Infastructure.Authentication;
 using Words.Persistence.Repositories;
+using Words.Application.Helpers;
 
 namespace Words.Persistence.Extensions;
 
 public static class ServiceExtension {
   public static IServiceCollection AddRepositories(this IServiceCollection services, ServiceLifetime lifetime) {
-    services.Add(new ServiceDescriptor(typeof(IJwtProvider), typeof(JwtProvider), lifetime));
-
     services.Add(new ServiceDescriptor(typeof(IUnitOfWork), typeof(UnitOfWork), lifetime));
     services.Add(new ServiceDescriptor(typeof(IRepository<>), typeof(Repository<>), lifetime));
     services.Add(new ServiceDescriptor(typeof(IUserRepository), typeof(UserRepository), lifetime));
@@ -43,6 +42,13 @@ public static class ServiceExtension {
     services.Add(new ServiceDescriptor(typeof(IValidator<WordModel>), typeof(WordValidator), lifetime));
     services.Add(new ServiceDescriptor(typeof(IValidator<AnswerModel>), typeof(AnswerValidator), lifetime));
     services.Add(new ServiceDescriptor(typeof(IValidator<CategoryModel>), typeof(CategoryValidator), lifetime));
+
+    return services;
+  }
+
+  public static IServiceCollection AddUtils(this IServiceCollection services, ServiceLifetime lifetime) {
+    services.Add(new ServiceDescriptor(typeof(IJwtProvider), typeof(JwtProvider), lifetime));
+    services.Add(new ServiceDescriptor(typeof(IPasswordManager), typeof(PasswordManager), lifetime));
 
     return services;
   }

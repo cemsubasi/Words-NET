@@ -37,7 +37,7 @@ public class WordService {
     var answers = model.Answers.Select(x => Answer.Create(x.Value, entity)).ToList();
 
     wordRepository.Add(entity);
-    await answerRepository.AddRangeAsync(answers);
+    await answerRepository.AddRangeAsync(answers, cancellationToken);
 
     var result = await this.unitOfWork.SaveChangesAsync(cancellationToken);
 

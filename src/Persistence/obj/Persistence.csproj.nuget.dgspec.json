@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/cem.subasi/Projects/CleanArchitecture/src/Persistence/Persistence.csproj": {}
+    "/Users/cem.subasi/Projects/Words-NET/src/Persistence/Persistence.csproj": {}
   },
   "projects": {
-    "/Users/cem.subasi/Projects/CleanArchitecture/src/Application/Application.csproj": {
+    "/Users/cem.subasi/Projects/Words-NET/src/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cem.subasi/Projects/CleanArchitecture/src/Application/Application.csproj",
+        "projectUniqueName": "/Users/cem.subasi/Projects/Words-NET/src/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Application/Application.csproj",
+        "projectPath": "/Users/cem.subasi/Projects/Words-NET/src/Application/Application.csproj",
         "packagesPath": "/Users/cem.subasi/.nuget/packages/",
-        "outputPath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Application/obj/",
+        "outputPath": "/Users/cem.subasi/Projects/Words-NET/src/Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/cem.subasi/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/Domain.csproj": {
-                "projectPath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/Domain.csproj"
+              "/Users/cem.subasi/Projects/Words-NET/src/Domain/Domain.csproj": {
+                "projectPath": "/Users/cem.subasi/Projects/Words-NET/src/Domain/Domain.csproj"
               }
             }
           }
@@ -70,14 +70,14 @@
         }
       }
     },
-    "/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/Domain.csproj": {
+    "/Users/cem.subasi/Projects/Words-NET/src/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/Domain.csproj",
+        "projectUniqueName": "/Users/cem.subasi/Projects/Words-NET/src/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/Domain.csproj",
+        "projectPath": "/Users/cem.subasi/Projects/Words-NET/src/Domain/Domain.csproj",
         "packagesPath": "/Users/cem.subasi/.nuget/packages/",
-        "outputPath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/obj/",
+        "outputPath": "/Users/cem.subasi/Projects/Words-NET/src/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/cem.subasi/.nuget/NuGet/NuGet.Config"
@@ -122,14 +122,14 @@
         }
       }
     },
-    "/Users/cem.subasi/Projects/CleanArchitecture/src/Infastructure/Infastructure.csproj": {
+    "/Users/cem.subasi/Projects/Words-NET/src/Infastructure/Infastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cem.subasi/Projects/CleanArchitecture/src/Infastructure/Infastructure.csproj",
+        "projectUniqueName": "/Users/cem.subasi/Projects/Words-NET/src/Infastructure/Infastructure.csproj",
         "projectName": "Infastructure",
-        "projectPath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Infastructure/Infastructure.csproj",
+        "projectPath": "/Users/cem.subasi/Projects/Words-NET/src/Infastructure/Infastructure.csproj",
         "packagesPath": "/Users/cem.subasi/.nuget/packages/",
-        "outputPath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Infastructure/obj/",
+        "outputPath": "/Users/cem.subasi/Projects/Words-NET/src/Infastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/cem.subasi/.nuget/NuGet/NuGet.Config"
@@ -144,11 +144,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/cem.subasi/Projects/CleanArchitecture/src/Application/Application.csproj": {
-                "projectPath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Application/Application.csproj"
+              "/Users/cem.subasi/Projects/Words-NET/src/Application/Application.csproj": {
+                "projectPath": "/Users/cem.subasi/Projects/Words-NET/src/Application/Application.csproj"
               },
-              "/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/Domain.csproj": {
-                "projectPath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/Domain.csproj"
+              "/Users/cem.subasi/Projects/Words-NET/src/Domain/Domain.csproj": {
+                "projectPath": "/Users/cem.subasi/Projects/Words-NET/src/Domain/Domain.csproj"
               }
             }
           }
@@ -187,14 +187,14 @@
         }
       }
     },
-    "/Users/cem.subasi/Projects/CleanArchitecture/src/Persistence/Persistence.csproj": {
+    "/Users/cem.subasi/Projects/Words-NET/src/Persistence/Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cem.subasi/Projects/CleanArchitecture/src/Persistence/Persistence.csproj",
+        "projectUniqueName": "/Users/cem.subasi/Projects/Words-NET/src/Persistence/Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Persistence/Persistence.csproj",
+        "projectPath": "/Users/cem.subasi/Projects/Words-NET/src/Persistence/Persistence.csproj",
         "packagesPath": "/Users/cem.subasi/.nuget/packages/",
-        "outputPath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Persistence/obj/",
+        "outputPath": "/Users/cem.subasi/Projects/Words-NET/src/Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/cem.subasi/.nuget/NuGet/NuGet.Config"
@@ -209,14 +209,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/cem.subasi/Projects/CleanArchitecture/src/Application/Application.csproj": {
-                "projectPath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Application/Application.csproj"
+              "/Users/cem.subasi/Projects/Words-NET/src/Application/Application.csproj": {
+                "projectPath": "/Users/cem.subasi/Projects/Words-NET/src/Application/Application.csproj"
               },
-              "/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/Domain.csproj": {
-                "projectPath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Domain/Domain.csproj"
+              "/Users/cem.subasi/Projects/Words-NET/src/Domain/Domain.csproj": {
+                "projectPath": "/Users/cem.subasi/Projects/Words-NET/src/Domain/Domain.csproj"
               },
-              "/Users/cem.subasi/Projects/CleanArchitecture/src/Infastructure/Infastructure.csproj": {
-                "projectPath": "/Users/cem.subasi/Projects/CleanArchitecture/src/Infastructure/Infastructure.csproj"
+              "/Users/cem.subasi/Projects/Words-NET/src/Infastructure/Infastructure.csproj": {
+                "projectPath": "/Users/cem.subasi/Projects/Words-NET/src/Infastructure/Infastructure.csproj"
               }
             }
           }

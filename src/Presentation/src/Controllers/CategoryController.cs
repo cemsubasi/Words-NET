@@ -20,7 +20,7 @@ public class CategoryController : ControllerBase {
 
   [HttpPost]
   public async Task<IActionResult> CreateCategory([FromBody] CategoryModel model, CancellationToken cancellationToken) {
-    Console.WriteLine("CreateCategory " + this.sessionService.User.Id);
+     Console.WriteLine("CreateCategory " + this.sessionService.User?.Id);
     var result = await this.categoryService.AddAsync(model, cancellationToken);
     if (!result) {
       return this.UnprocessableEntity();
@@ -31,7 +31,7 @@ public class CategoryController : ControllerBase {
 
   [HttpGet]
   public async Task<IActionResult> GetAll(CancellationToken cancellationToken) {
-    var result = await this.categoryService.GetAllAsync();
+    var result = await this.categoryService.GetAllAsync(cancellationToken);
     return this.Ok(result);
   }
 
@@ -46,6 +46,4 @@ public class CategoryController : ControllerBase {
     var result = await this.categoryService.RemoveCategory(id, cancellationToken).ConfigureAwait(false);
     return this.Ok(result);
   }
-
-
 }

@@ -1,9 +1,9 @@
 # First Step Create Migration
 
-dotnet ef migrations add "Initial_migration" --context MainDbContext --project src/Persistence --output-dir src/Contexts/MainDb/Migrations --json
+dotnet ef migrations add "Initial_migration" --context MainDbContext --project src/Persistence --startup-project src/Presentation --output-dir src/Contexts/MainDb/Migrations --json
 
 # Second Step Update Database
 
-dotnet ef database update --context MainDbContext --project src/Persistence
+dotnet ef database update --context MainDbContext --project src/Persistence --startup-project src/Presentation
 
 

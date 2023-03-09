@@ -31,12 +31,12 @@ public class Repository<TEntity> : IRepository<TEntity> where TEntity : Entity {
     return this.mainDbContext.Set<TEntity>().AsQueryable();
   }
 
-  public async Task<ICollection<TEntity>> GetAllAsync() {
-    return await this.mainDbContext.Set<TEntity>().ToListAsync();
+  public async Task<ICollection<TEntity>> GetAllAsync(CancellationToken cancellationToken) {
+    return await this.mainDbContext.Set<TEntity>().ToListAsync(cancellationToken);
   }
 
-  public Task<TEntity?> GetById(Guid id) {
-    return this.mainDbContext.Set<TEntity>().SingleOrDefaultAsync(x => x.Id == id);
+  public Task<TEntity?> GetById(Guid id,CancellationToken cancellationToken) {
+    return this.mainDbContext.Set<TEntity>().SingleOrDefaultAsync(x => x.Id == id, cancellationToken);
   }
 
   public IQueryable<TEntity> GetQueryable() {
@@ -55,11 +55,15 @@ public class Repository<TEntity> : IRepository<TEntity> where TEntity : Entity {
     _ = this.mainDbContext.Set<TEntity>().Remove(entity);
   }
 
-  public async Task AddRangeAsync(IEnumerable<TEntity> entities) {
-    await this.mainDbContext.Set<TEntity>().AddRangeAsync(entities);
+  public async Task AddRangeAsync(IEnumerable<TEntity> entities, CancellationToken cancellationToken) {
+    await this.mainDbContext.Set<TEntity>().AddRangeAsync(entities, cancellationToken);
   }
 
-  public async Task<IEnumerable<TEntity>> WhereAsync(Expression<Func<TEntity, bool>> expression) {
-    return await this.mainDbContext.Set<TEntity>().Where(expression).ToListAsync();
+  public async Task<IEnumerable<TEntity>> WhereAsync(Expression<Func<TEntity, bool>> expression, CancellationToken cancellationToken) {
+    return await this.mainDbContext.Set<TEntity>().Where(expression).ToListAsync(cancellationToken);
+  }
+
+  public async Task<TEntity?> SingleOrDefaultAsync(Expression<Func<TEntity, bool>> expression, CancellationToken cancellationToken) {
+    return await this.mainDbContext.Set<TEntity>().SingleOrDefaultAsync(expression, cancellationToken);
   }
 }
