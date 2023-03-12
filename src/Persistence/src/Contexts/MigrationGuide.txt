@@ -6,4 +6,6 @@ dotnet ef migrations add "Initial_migration" --context MainDbContext --project s
 
 dotnet ef database update --context MainDbContext --project src/Persistence --startup-project src/Presentation
 
+# Remove Migration
 
+dotnet ef migrations remove --context MainDbContext --project src/Persistence --startup-project src/Presentation

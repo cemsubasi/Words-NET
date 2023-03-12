@@ -6,6 +6,7 @@
 #Environment settings
 src/Presentation/appsettings.json
 src/Presentation/appsettings.Development.json
+.vimspector.json
 
 # User-specific files
 *.rsuser
